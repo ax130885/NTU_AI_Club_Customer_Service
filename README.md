@@ -10,7 +10,8 @@ pip install -r requirement.txt
 python model.py
 ```
 
-## 
+## Run Customer Service
 ```bash
 python main.py
 ```
+use "exit" to end the program.
