@@ -19,3 +19,6 @@ params = SamplingParams(
 def _inference(prompt, llm, params):
     return llm.generate(prompt, params)[0].outputs[0].text
 
+if __name__ == "__main__":
+    llm.download_model()
+    
