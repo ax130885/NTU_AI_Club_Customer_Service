@@ -107,6 +107,8 @@ class CustomerService:
       
     def find_course_by_topic(self, query):
         topics = self.course_data["社課主題"].tolist()
+        query = str(query)                        # 確保 query 是字串
+        topics = [str(topic) for topic in topics] # 確保所有元素都是字串
         closest_matches = difflib.get_close_matches(query, topics, n=1, cutoff=0.1)
         
         if not closest_matches:
