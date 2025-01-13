@@ -20,5 +20,8 @@ def _inference(prompt, llm, params):
     return llm.generate(prompt, params)[0].outputs[0].text
 
 if __name__ == "__main__":
-    llm.download_model()
+    prompt = [
+        {"role": "system", "content": "這是一個測試程式，僅為了下載模型用。"},
+    ]
+    response = _inference(prompt, llm, params)
     
