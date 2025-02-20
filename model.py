@@ -3,7 +3,7 @@ from vllm import LLM, SamplingParams
 llm = LLM(
     model='MediaTek-Research/Breeze-7B-FC-v1_0',
     tensor_parallel_size=1, # number of gpus
-    gpu_memory_utilization=0.9,
+    gpu_memory_utilization=0.95,
     dtype='half'
 )
 

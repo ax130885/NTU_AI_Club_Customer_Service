@@ -60,7 +60,9 @@ while True:
         # print(result2)
         print("AI 回答:", result2['content'])
 
-# do you know the course topic between last month?
+# do you know what course be held in 2024-09-12 ?
+
+# do you know the course topic between last year?
 # how about today
 # where is the course be held
 # when is today's course be held?

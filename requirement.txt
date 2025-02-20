@@ -5,3 +5,4 @@ pandas
 pytz
 numpy
 ipywidgets
+Pillow
